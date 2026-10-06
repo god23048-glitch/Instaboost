@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaBoost Pro - Instant Instagram Growth & Followers</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .insta-gradient {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+        .insta-text-gradient {
+            background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcaf45);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-pink-500 selection:text-white min-h-screen flex flex-col justify-between">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl insta-gradient flex items-center justify-center shadow-lg shadow-pink-500/20">
+                    <i class="fa-brands fa-instagram text-white text-2xl"></i>
+                </div>
+                <span class="text-xl font-black tracking-tight text-white">Insta<span class="insta-text-gradient">Boost</span></span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#features" class="hover:text-pink-400 transition">Features</a>
+                <a href="#pricing" class="hover:text-pink-400 transition">Packages</a>
+                <a href="#reviews" class="hover:text-pink-400 transition">Reviews</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#pricing" class="px-5 py-2.5 rounded-full insta-gradient text-white text-sm font-semibold shadow-lg shadow-pink-500/30 hover:opacity-90 transition transform hover:-translate-y-0.5">
+                    Get Followers
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow pt-28">
+        <section class="relative overflow-hidden py-16 lg:py-24">
+            <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+            <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-pink-600/15 rounded-full blur-[100px] pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <!-- Left Hero Content & Form -->
+                    <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+                        <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-slate-900 border border-slate-800 text-xs font-medium text-pink-400 shadow-sm">
+                            <span class="flex h-2 w-2 rounded-full bg-pink-500 animate-pulse"></span>
+                            <span>Trusted by 45,000+ Creators & Brands</span>
+                        </div>
+                        
+                        <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white leading-tight">
+                            Explode Your <span class="insta-text-gradient">Instagram Growth</span> Instantly.
+                        </h1>
+                        
+                        <p class="text-lg text-slate-400 max-w-2xl mx-auto lg:mx-0">
+                            Supercharge your profile authority, boost social proof, and kickstart your reach with lightning-fast, high-retention automated bot followers delivered safely.
+                        </p>
+
+                        <div class="glass-card p-6 sm:p-8 rounded-3xl max-w-xl mx-auto lg:mx-0 text-left shadow-2xl">
+                            <form id="growth-form" onsubmit="handleProceed(event)" class="space-y-4">
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Instagram Username / Handle</label>
+                                    <div class="relative">
+                                        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-500 font-bold">@</div>
+                                        <input type="text" id="insta-username" required placeholder="your_username" 
+                                            class="w-full pl-9 pr-4 py-3.5 bg-slate-900/90 border border-slate-700/80 rounded-xl text-white placeholder-slate-500 focus:outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-500/20 transition text-sm">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Select Follower Package</label>
+                                    <select id="package-select" class="w-full px-4 py-3.5 bg-slate-900/90 border border-slate-700/80 rounded-xl text-white focus:outline-none focus:border-pink-500 focus:ring-2 focus:ring-pink-500/20 transition text-sm">
+                                        <option value="299">5,000 Bot Followers - ₹299</option>
+                                        <option value="499" selected>10,000 Bot Followers (Most Popular) - ₹499</option>
+                                        <option value="999">25,000 Bot Followers - ₹999</option>
+                                    </select>
+                                </div>
+
+                                <button type="submit" class="w-full py-4 rounded-xl insta-gradient text-white font-bold text-base shadow-xl shadow-pink-600/30 hover:opacity-95 transition transform active:scale-95 flex items-center justify-center space-x-2">
+                                    <span>Proceed to Secure Checkout</span>
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Right Hero Visual / Animated Preview Card -->
+                    <div class="lg:col-span-5 flex justify-center">
+                        <div class="relative w-full max-w-sm">
+                            <div class="absolute -inset-1 rounded-3xl insta-gradient opacity-30 blur-xl"></div>
+                            <div class="relative glass-card rounded-3xl p-6 border border-slate-700 shadow-2xl space-y-6">
+                                <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="w-14 h-14 rounded-full p-0.5 insta-gradient">
+                                            <img src="https://placehold.co/150x150/1e1935/ffffff?text=IG" alt="Avatar" class="w-full h-full object-cover rounded-full bg-slate-900">
+                                        </div>
+                                        <div>
+                                            <h3 id="preview-username" class="font-bold text-white text-sm">@creator_pro</h3>
+                                            <p class="text-xs text-slate-400">Instagram Creator</p>
+                                        </div>
+                                    </div>
+                                    <span class="px-2.5 py-1 rounded-full bg-green-500/10 text-green-400 text-xs font-semibold flex items-center space-x-1">
+                                        <span class="w-1.5 h-1.5 rounded-full bg-green-500 animate-ping"></span>
+                                        <span>Live Sync</span>
+                                    </span>
+                                </div>
+
+                                <div class="grid grid-cols-3 gap-3 text-center">
+                                    <div class="bg-slate-900/80 p-3 rounded-2xl border border-slate-800">
+                                        <span class="text-xs text-slate-400 block">Posts</span>
+                                        <span class="text-base font-bold text-white">142</span>
+                                    </div>
+                                    <div class="bg-slate-900/80 p-3 rounded-2xl border border-slate-800">
+                                        <span class="text-xs text-slate-400 block">Followers</span>
+                                        <span id="counter-followers" class="text-base font-bold text-pink-400 transition-all duration-300">10,482</span>
+                                    </div>
+                                    <div class="bg-slate-900/80 p-3 rounded-2xl border border-slate-800">
+                                        <span class="text-xs text-slate-400 block">Following</span>
+                                        <span class="text-base font-bold text-white">420</span>
+                                    </div>
+                                </div>
+
+                                <div class="space-y-3 pt-2">
+                                    <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Live Delivery Stream</h4>
+                                    <div id="live-activity-feed" class="space-y-2 max-h-48 overflow-y-auto text-xs pr-1">
+                                        <div class="flex items-center justify-between p-2.5 rounded-xl bg-slate-900/50 border border-slate-800/60">
+                                            <div class="flex items-center space-x-2">
+                                                <i class="fa-solid fa-user-plus text-pink-400"></i>
+                                                <span class="text-slate-300">@alex_bot_99 started following</span>
+                                            </div>
+                                            <span class="text-[10px] text-slate-500">Just now</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section with exactly 3 packages -->
+        <section id="pricing" class="py-20 bg-slate-900/50 border-t border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <h2 class="text-3xl sm:text-4xl font-black text-white">Choose Your Growth Tier</h2>
+                    <p class="text-slate-400">Select the package that fits your goals. All packages include high-retention bot delivery and secure Razorpay encrypted checkout.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                    
+                    <!-- 1st Package: ₹299 -->
+                    <div class="glass-card rounded-3xl p-8 border border-slate-800 text-left space-y-6 relative hover:border-slate-700 transition">
+                        <div>
+                            <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">Starter Pack</span>
+                            <h3 class="text-2xl font-black text-white mt-1">5,000 Followers</h3>
+                            <p class="text-xs text-slate-400 mt-1">Great for new creators looking for a quick boost.</p>
+                        </div>
+                        <div class="flex items-baseline space-x-2">
+                            <span class="text-4xl font-black text-white">₹299</span>
+                            <span class="text-sm text-slate-500 line-through">₹799</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-pink-500"></i><span>5,000 Automated Bot Followers</span></li>
+                            <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-pink-500"></i><span>Gradual Safe Delivery</span></li>
+                            <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-pink-500"></i><span>No Password Required</span></li>
+                        </ul>
+                        <button onclick="openModalForPackage('299', '5,000 Bot Followers')" class="w-full py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-sm transition">
+                            Get 5K Followers (₹299)
+                        </button>
+                    </div>
+
+                    <!-- 2nd Package: ₹499 -->
+                    <div class="relative glass-card rounded-3xl p-8 border-2 border-pink-500 text-left space-y-6 shadow-2xl shadow-pink-500/10 scale-105 z-10">
+                        <div class="absolute -top-3.5 right-6 px-3 py-1 rounded-full insta-gradient text-white text-xs font-bold uppercase tracking-wider shadow-md">
+                            Most Popular
+                        </div>
+                        <div>
+                            <span class="text-xs font-bold text-pink-400 uppercase tracking-wider">Growth Accelerator</span>
+                            <h3 class="text-2xl font-black text-white mt-1">10,000 Followers</h3>
+                            <p class="text-xs text-slate-400 mt-1">Our flagship package for maximum social proof.</p>
+                        </div>
+                        <div class="flex items-baseline space-x-2">
+                            <span class="text-4xl font-black text-white">₹499</span>
+                            <span class="text-sm text-slate-500 line-through">₹1,499</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-pink-500"></i><span>10,000 Automated Bot Followers</span></li>
+                            <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-pink-500"></i><span>Priority Queue Dispatch</span></li>
+                            <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-pink-500"></i><span>No Password Required</span></li>
+                        </ul>
+                        <button onclick="openModalForPackage('499', '10,000 Bot Followers')" class="w-full py-3.5 rounded-xl insta-gradient text-white font-bold text-sm shadow-lg shadow-pink-500/30 hover:opacity-95 transition">
+                            Get 10K Followers (₹499)
+                        </button>
+                    </div>
+
+                    <!-- 3rd Package: ₹999 -->
+                    <div class="glass-card rounded-3xl p-8 border border-slate-800 text-left space-y-6 relative hover:border-slate-700 transition">
+                        <div>
+                            <span class="text-xs font-bold text-orange-400 uppercase tracking-wider">VIP Tier</span>
+                            <h3 class="text-2xl font-black text-white mt-1">25,000 Followers</h3>
+                            <p class="text-xs text-slate-400 mt-1">Complete profile transformation for brands.</p>
+                        </div>
+                        <div class="flex items-baseline space-x-2">
+                            <span class="text-4xl font-black text-white">₹999</span>
+                            <span class="text-sm text-slate-500 line-through">₹2,999</span>
+                        </div>
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-pink-500"></i><span>25,000 Automated Bot Followers</span></li>
+                            <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-pink-500"></i><span>Instant VIP Processing</span></li>
+                            <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-pink-500"></i><span>No Password Required</span></li>
+                        </ul>
+                        <button onclick="openModalForPackage('999', '25,000 Bot Followers')" class="w-full py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-sm transition">
+                            Get 25K Followers (₹999)
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-12 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-2">
+                <i class="fa-brands fa-instagram text-pink-500 text-base"></i>
+                <span class="text-slate-400 font-bold">&copy; 2026 InstaBoost Pro. All rights reserved.</span>
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-slate-300 transition">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-300 transition">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-md hidden p-4">
+        <div class="relative w-full max-w-md bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl insta-gradient flex items-center justify-center text-white font-bold shadow-md">
+                        <i class="fa-solid fa-lock text-sm"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Secure Checkout</h3>
+                        <p class="text-xs text-slate-400">Powered by Razorpay Encryption</p>
+                    </div>
+                </div>
+                <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white flex items-center justify-center transition">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="bg-slate-950/60 p-4 rounded-2xl border border-slate-800/80 space-y-2">
+                <div class="flex justify-between text-xs">
+                    <span class="text-slate-400">Instagram Handle:</span>
+                    <span id="modal-display-user" class="font-bold text-white">@username</span>
+                </div>
+                <div class="flex justify-between text-xs">
+                    <span class="text-slate-400">Selected Package:</span>
+                    <span id="modal-display-package" class="font-bold text-pink-400">10,000 Bot Followers</span>
+                </div>
+                <div class="flex justify-between text-xs pt-2 border-t border-slate-800">
+                    <span class="text-slate-300 font-semibold">Total Amount:</span>
+                    <span id="modal-display-price" class="text-sm font-black text-white">₹499</span>
+                </div>
+            </div>
+
+            <div class="pt-2 text-center">
+                <p class="text-xs text-slate-400 mb-4">Click the official secure button below to complete payment:</p>
+                <div id="razorpay-button-container" class="flex justify-center min-h-[44px]">
+                    <!-- Dynamically injected Razorpay form & script -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const usernameInput = document.getElementById('insta-username');
+        const previewUsername = document.getElementById('preview-username');
+        const modalDisplayUser = document.getElementById('modal-display-user');
+        const packageSelect = document.getElementById('package-select');
+        const modalDisplayPackage = document.getElementById('modal-display-package');
+        const modalDisplayPrice = document.getElementById('modal-display-price');
+        const checkoutModal = document.getElementById('checkout-modal');
+        const counterFollowers = document.getElementById('counter-followers');
+        const razorpayContainer = document.getElementById('razorpay-button-container');
+
+        // Package Mapping with exact Razorpay Button IDs
+        const packagesData = {
+            '299': {
+                name: '5,000 Bot Followers',
+                price: '₹299',
+                base: 5420,
+                buttonId: 'pl_Tkfjh3VAFIWZqr'
+            },
+            '499': {
+                name: '10,000 Bot Followers',
+                price: '₹499',
+                base: 10482,
+                buttonId: 'pl_Tkg08R5Pj1WI98'
+            },
+            '999': {
+                name: '25,000 Bot Followers',
+                price: '₹999',
+                base: 25300,
+                buttonId: 'pl_Tkg1hXLshVUjHX'
+            }
+        };
+
+        usernameInput.addEventListener('input', (e) => {
+            const val = e.target.value.trim();
+            previewUsername.textContent = val ? '@' + val : '@creator_pro';
+        });
+
+        packageSelect.addEventListener('change', (e) => {
+            const pkg = packagesData[e.target.value];
+            if (pkg) {
+                counterFollowers.textContent = pkg.base.toLocaleString();
+            }
+        });
+
+        // Robustly inject Razorpay button script so browser executes it properly
+        function loadRazorpayButton(buttonId) {
+            razorpayContainer.innerHTML = '';
+            const form = document.createElement('form');
+            const script = document.createElement('script');
+            script.src = 'https://checkout.razorpay.com/v1/payment-button.js';
+            script.setAttribute('data-payment_button_id', buttonId);
+            script.async = true;
+            form.appendChild(script);
+            razorpayContainer.appendChild(form);
+        }
+
+        function handleProceed(event) {
+            event.preventDefault();
+            const username = usernameInput.value.trim() || 'creator_pro';
+            const selectedVal = packageSelect.value;
+            const pkgData = packagesData[selectedVal];
+
+            modalDisplayUser.textContent = '@' + username;
+            modalDisplayPackage.textContent = pkgData.name;
+            modalDisplayPrice.textContent = pkgData.price;
+            
+            loadRazorpayButton(pkgData.buttonId);
+            checkoutModal.classList.remove('hidden');
+        }
+
+        function openModalForPackage(priceVal, packageName) {
+            packageSelect.value = priceVal;
+            const pkgData = packagesData[priceVal];
+            if (pkgData) {
+                counterFollowers.textContent = pkgData.base.toLocaleString();
+            }
+            const username = usernameInput.value.trim() || 'creator_pro';
+            modalDisplayUser.textContent = '@' + username;
+            modalDisplayPackage.textContent = pkgData.name;
+            modalDisplayPrice.textContent = pkgData.price;
+            
+            loadRazorpayButton(pkgData.buttonId);
+            checkoutModal.classList.remove('hidden');
+        }
+
+        function closeModal() {
+            checkoutModal.classList.add('hidden');
+        }
+
+        checkoutModal.addEventListener('click', (e) => {
+            if (e.target === checkoutModal) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
